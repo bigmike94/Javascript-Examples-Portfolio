@@ -1,0 +1,30 @@
+[
+	   {
+	   	"id":"1",
+	    "question": "What does CSS stand for?",   
+	    "answers": ["Computer Style Sheets", "Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets"],
+	    "right-answer": "2"
+	   },  
+	   {
+	   	"id":"2",
+	    "question": "Which HTML tag is used to define an internal style sheet?",   
+		"answers": ["&lt;script&gt;", "&lt;css&gt;", "&lt;style&gt;", "&lt;link&gt;"],
+	    "right-answer": "2"
+	   },
+	   {
+	   	"id":"3",
+	    "question": "Where is the correct place to insert a JavaScript?",   
+		"answers": ["Both the &lt;head&gt; section and the &lt;body&gt; section are correct", 
+					"The &lt;body&gt; section", "The &lt;head&gt; section", "Other"],
+	    "right-answer": "0"
+	   },
+	   {
+	   	"id":"4",
+	    "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",   
+		"answers": [" &lt;script name=&quot;xxx.js&quot;&gt;",
+					" &lt;script src=&quot;xxx.js&quot;&gt;",
+					" &lt;script link=&quot;xxx.js&quot;&gt;",
+					" &lt;script href=&quot;xxx.js&quot;&gt;"],
+	    "right-answer": "1"
+	   }    
+]

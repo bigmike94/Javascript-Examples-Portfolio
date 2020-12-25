@@ -1,0 +1,26 @@
+[
+	   {
+	   	"id":"1",
+	    "question": "What does HTML stand for?",   
+	    "answers": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Other"],
+	    "right-answer": "0"
+	   },  
+	   {
+	   	"id":"2",
+	    "question": "Who is making the Web standards?",   
+		"answers": ["Microsoft", "Google", "Mozilla", "The World Wide Web Consortium"],
+	    "right-answer": "3"
+	   },
+	   {
+	   	"id":"3",
+	    "question": "How do you write 'Hello World' in an alert box?",   
+		"answers": ["msg('Hello World');", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
+	    "right-answer": "3"
+	   },
+	   {
+	   	"id":"4",
+	    "question": "How does a FOR loop start?",   
+		"answers": ["for (i = 0; i <= 5)","for (i = 0; i <= 5; i++)","for i = 1 to 5","for (i <= 5; i++)"],
+	    "right-answer": "1"
+	   }    
+]
