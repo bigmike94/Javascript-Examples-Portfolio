@@ -1,0 +1,43 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#pictures-wrapper{
+	width: 1000px;
+	position: relative;
+	padding: 0px;
+	margin:auto;
+	margin-top: 250px;
+}
+
+#overlay{
+	width: 50%;
+	height: auto;
+	overflow:hidden;
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+}
+#line {
+	z-index: 3;
+	top: 0px;
+	left: 500px;
+	position: absolute;
+	width: 5px;
+	height: 100%;
+	background-color:white;
+}
+#circle{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: white;
+	position: relative;
+	left: -10px;
+	top: 40%;
+	cursor: pointer;
+}
+
+#circle:hover{
+	transform: scale(1.3, 1.3);
+}
