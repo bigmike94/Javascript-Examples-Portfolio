@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, paper, scissors</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Rock, paper, scissors</h1>
+	<div style="text-align: center;"><b>Last score: </b><span id="lastScore"></span></div>
+	<div id="playground">
+		<div id="play">
+			<div class="players">
+				<div class="playerPoints"><b>Users points:</b><span id="userPoints">0</span></div>
+				<img src="img/rock.png" alt="rock" id="userChoice">	
+			</div>
+			<div class="players">
+				<div class="playerPoints"><b>CPU points:</b><span id="cpuPoints">0</span></div>
+				<img src="img/rock.png" alt="rock" id="cpuChoice">	
+			</div>
+		</div>
+		<div id="startButton">
+			<button id="start">Start</button>
+		</div><br>
+		<div id="deleteButton">
+			<button id="delete">clear</button>
+		</div>			
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

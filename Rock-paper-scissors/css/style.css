@@ -1,0 +1,44 @@
+#playground{
+	width: 700px;
+	height: 500px;
+	margin: auto;
+}
+#start, #delete{
+	width: 100px;
+	height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	background-color: #8c8c8c;
+	text-align: center;
+	cursor: pointer;
+}
+#startButton, #deleteButton{
+	width: 100px;
+	height: 30px;
+	margin: auto;
+}
+#play {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+.players{
+	font-size: 26px;
+	margin: 15px;
+}
+#userPoints, #cpuPoints{
+	padding: 10px;
+}
+
+.playerPoints{
+	margin-bottom: 20px;
+}
+
+h1{
+	text-align: center;
+}
+
+#cpuChoice{
+	transform: scale(-1, 1);
+}
