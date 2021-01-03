@@ -24,7 +24,7 @@ function dateDiff(endDate, startDate = new Date()) {
 	}
 }
 
-function writeDiff(endDate){
+function writeDiff(){
 	const startDate = new Date();
 	const diff = dateDiff(endDate, startDate);
 	if (diff!=undefined) {
@@ -45,10 +45,10 @@ function setAndUpdateDiscountTime(endDate) {
 	endTimeLabel.textContent = 
 	`${endDate.getHours()<10?"0"+endDate.getHours():endDate.getHours()}:
 	${(endDate.getMinutes())<10?"0"+endDate.getMinutes():endDate.getMinutes()}`;
-	writeDiff(endDate);
+	writeDiff();
 
 	discountTimer = setInterval(()=>{
-		writeDiff(endDate);
+		writeDiff();
 	}, 
 	oneSecond);
 }
@@ -59,5 +59,5 @@ const timeLeft = document.querySelector("#timeLeft");
 const endDateLabel = document.querySelector("#endDate");
 const endTimeLabel = document.querySelector("#endTime");
 
-const endDate = new Date("2021-01-03T10:00");//wanted end date
+const endDate = new Date("2021-02-01T21:00");//wanted end date
 setAndUpdateDiscountTime(endDate);
