@@ -2,6 +2,7 @@ const oneDay = 24*3600*1000;//one day in miliseconds
 const oneHour = 3600*1000;//one hour in miliseconds
 const oneMinute = 60*1000;//one minute in miliseconds
 const oneSecond = 1000;//one second in miliseconds
+let discountTimer;
 
 function dateDiff(endDate, startDate = new Date()) {
 	const fullDiff = endDate - startDate;
@@ -23,7 +24,7 @@ function dateDiff(endDate, startDate = new Date()) {
 	}
 }
 
-function writeDiff(){
+function writeDiff(endDate){
 	const startDate = new Date();
 	const diff = dateDiff(endDate, startDate);
 	if (diff!=undefined) {
@@ -31,8 +32,8 @@ function writeDiff(){
 		timeLeft.textContent = `${diff.hours}:${diff.minutes}:${diff.seconds}`;
 	}
 	else {
-		clearInterval(discountTimer);
 		periodLeft.innerHTML = "<b>Discount period is over!</b>";
+		clearInterval(discountTimer);
 	}
 }
 function setAndUpdateDiscountTime(endDate) {
@@ -46,7 +47,7 @@ function setAndUpdateDiscountTime(endDate) {
 	${(endDate.getMinutes())<10?"0"+endDate.getMinutes():endDate.getMinutes()}`;
 	writeDiff(endDate);
 
-	const discountTimer = setInterval(()=>{
+	discountTimer = setInterval(()=>{
 		writeDiff(endDate);
 	}, 
 	oneSecond);
@@ -58,5 +59,5 @@ const timeLeft = document.querySelector("#timeLeft");
 const endDateLabel = document.querySelector("#endDate");
 const endTimeLabel = document.querySelector("#endTime");
 
-const endDate = new Date("2020-12-28T21:00");//wanted end date
+const endDate = new Date("2021-01-03T10:00");//wanted end date
 setAndUpdateDiscountTime(endDate);
