@@ -1,2 +1,2 @@
 # Javascript-Examples-Portfolio
-Random test projects made with pure Javascript
+Random test projects made with Javascript & jQuery and etc
