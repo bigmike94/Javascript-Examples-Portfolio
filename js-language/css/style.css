@@ -1,0 +1,22 @@
+#nav-wrapper{
+	display: flex;
+	justify-content: space-between; 
+}
+#about-header{
+	text-align: center;
+}
+#about{
+	width: 300px;
+	margin:  auto;
+}
+.nav-menu-items{
+	margin-right: 15px;
+	margin-left: 15px;
+	text-decoration: none;
+}
+.lang-item{
+	text-decoration: none;
+}
+#header{
+	text-align: center;
+}

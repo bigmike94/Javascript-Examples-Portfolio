@@ -1,0 +1,10 @@
+{
+   "menu": {
+   	   "ge": ["მთავარი",  "ჩვენს შესახებ", "პროდუქტები", "კონტაქტი"],
+   	   "en": ["Home",  "About us", "Products", "Contact"]
+   },
+   "about":{
+   		"ge": ["კომპანიის შესახებ", "ლორემ იპსუმ სიტ ამეტ ლორემ იპსუმ სიტ ამეტ"],
+   		"en": ["About company", "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"]
+   }
+}
