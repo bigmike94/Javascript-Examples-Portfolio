@@ -17,7 +17,6 @@ class PictureOverlay{
 		this.line.style.left = x+"px";
 		this.overlayDiv.style.width = x+"px";
 	}
-
 }
 let pictureOverlay = new PictureOverlay("pictures-wrapper", "overlay", "line", "circle");
 
