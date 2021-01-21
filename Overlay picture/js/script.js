@@ -6,11 +6,6 @@ class PictureOverlay{
 		this.overlayDiv = document.getElementById(overlayDiv);
 		this.line = document.getElementById(line);
 	}
-	dropCircle(event){
-		let x = this.checkCoordinates(event);
-		this.line.style.left = x+"px";
-		this.overlayDiv.style.width = x+"px";
-	}
 	checkCoordinates(event){
 		let x = event.clientX - this.wrapper.offsetLeft;
 		if (x>=this.wrapper.clientWidth) x = this.wrapper.clientWidth;
@@ -32,5 +27,5 @@ pictureOverlay.circle.addEventListener("drag", function(event){
 });
 
 pictureOverlay.circle.addEventListener("dragend", function(event){
-	pictureOverlay.dropCircle(event);
+	pictureOverlay.overlay(event);
 });
