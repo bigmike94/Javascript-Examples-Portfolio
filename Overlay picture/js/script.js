@@ -18,13 +18,10 @@ class PictureOverlay{
 		this.overlayDiv.style.width = x+"px";
 	}
 }
-let pictureOverlay = new PictureOverlay("pictures-wrapper", "overlay", "line", "circle");
-
-
+const pictureOverlay = new PictureOverlay("pictures-wrapper", "overlay", "line", "circle");
 pictureOverlay.circle.addEventListener("drag", function(event){
 	pictureOverlay.overlay(event);
 });
-
 pictureOverlay.circle.addEventListener("dragend", function(event){
 	pictureOverlay.overlay(event);
 });
